@@ -3,6 +3,9 @@ function [forward_behav, pause_behav, reverse_behav, prob_sensory_on, prob_senso
                                                                                             forward_var, pause_var, reverse_var, ...
                                                                                             stim_on_mean, stim_off_mean, transition_mat, valence_mat, relative_weights,...
                                                                                             noise_level, SEED)
+    
+    % This function simulates the behavioral activity from latent space inputs
+    
     %% Set the seed
     rng(SEED);
                                                                                                                                                                                

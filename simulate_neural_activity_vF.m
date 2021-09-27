@@ -5,12 +5,16 @@ function [Calcium_response, x_response, nu_response, gamma_response] = simulate_
                                                               latent_dim, neural_dim, overlap, baseline, low_asymp, up_asymp,...
                                                               curve, low_pass, gain)
                                                           
+   %% Set the seed
    rng(SEED);
    
-   stim_A_num = ceil((overlap + neural_dim)/ 2);
-   pure_stim_A = stim_A_num - overlap;  
+   %% Create some auxiliary parameters for analysis
+   stim_A_num = ceil((overlap + neural_dim)/ 2); %number of neural units tuned to first dimension of the latent space
+   pure_stim_A = stim_A_num - overlap;  %number of neural units ONLY sensitive to first dimension of the latent space
    
-   total_dim = neural_dim + 3*latent_dim ;
+   total_dim = neural_dim + 3*latent_dim ; %dimensionality of the augmented state space problem
+   
+   %% Initialize the matrices to synthesize neural and latent space activity
    
    x_response = zeros(neural_dim, length(t_index));
    nu_response = zeros(latent_dim, length(t_index));
