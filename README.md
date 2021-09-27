@@ -8,4 +8,8 @@ Hamilton White, Sruti Mallik, ShiNung Ching, Dirk Albrecht (To appear in ELife)
 
 All codes are in MATLAB. This repository contains only the preliminary codes for simulating the model, more MATLAB codes that create the figures in the paper will be released soon.
 
+![Neural adaptation](https://github.com/smallik92/Sensory_memory_mediated_adaptation/blob/main/Neural%20adaptation.png)
+
+![Behavioral invariance](https://github.com/smallik92/Sensory_memory_mediated_adaptation/blob/main/Behavioral_invariance.png)
+
 For more information contact: srutimallik92@gmail.com
