@@ -52,7 +52,7 @@ function [forward_behav, pause_behav, reverse_behav, prob_sensory_on, prob_senso
     end
     
     forward_behav = likelihood(1, :);
-    pause_behav = likelihood(2, :);
-    reverse_behav = likelihood(3, :);
+    reverse_behav = likelihood(2, :);
+    pause_behav = likelihood(3, :);
 %     
 end
